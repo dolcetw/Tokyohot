@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關東秘境自駕之旅 9天8夜</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            scroll-behavior: smooth;
+        }
+        
+        .day-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .img-container {
+            aspect-ratio: 3 / 2;
+            overflow: hidden;
+            border-radius: 0.75rem;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .img-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -9px;
+            top: 10px;
+            width: 18px;
+            height: 18px;
+            background-color: #2563eb;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px #2563eb;
+        }
+
+        .itinerary-line {
+            position: relative;
+            border-left: 2px solid #e2e8f0;
+            margin-left: 1rem;
+            padding-left: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .itinerary-line:last-child {
+            border-left: none;
+        }
+
+        .sticky-nav {
+            position: sticky;
+            top: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white py-20 px-4 shadow-xl mb-12 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1600" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 tracking-tighter">關東秘境自駕</h1>
+            <p class="text-xl opacity-80 font-light tracking-[0.5em] text-blue-200">9 DAYS EXPLORATION</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 pb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            
+            <!-- Sidebar Navigation -->
+            <div class="hidden lg:block lg:col-span-3">
+                <div class="sticky-nav">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                        <h3 class="font-bold text-xl mb-6 text-slate-800 border-b pb-4">行程指南</h3>
+                        <nav class="flex flex-col space-y-2">
+                            <a href="#day1" class="px-4 py-2 hover:bg-blue-50 rounded-xl transition text-slate-600 hover:text-blue-600 font-medium">Day 1 夜抵成田</a>
+                            <a href="#day2" class="px-4 py-2 hover:bg-blue-50 rounded-xl transition text-slate-600 hover:text-blue-600 font-medium">Day 2 茨城海岸</a>
+                            <a href="#day3" class="px-4 py-2 hover:bg-blue-50 rounded-xl transition text-slate-600 hover:text-blue-600 font-medium">Day 3 日光遺產</a>
+                            <a href="#day4" class="px-4 py-2 hover:bg-blue-50 rounded-xl transition text-slate-600 hover:text-blue-600 font-medium">Day 4 尾瀨健行</a>
+                            <a href="#day5" class="px-4 py-2 hover:bg-blue-50 rounded-xl transition text-slate-600 hover:text-blue-600 font-medium">Day 5 四萬藍草津</a>
+                            <a href="#day6" class="px-4 py-2 hover:bg-blue-50 rounded-xl transition text-slate-600 hover:text-blue-600 font-medium">Day 6 志賀道路</a>
+                            <a href="#day7" class="px-4 py-2 hover:bg-blue-50 rounded-xl transition text-slate-600 hover:text-blue-600 font-medium">Day 7 輕井澤藝術</a>
+                            <a href="#day8" class="px-4 py-2 hover:bg-blue-50 rounded-xl transition text-slate-600 hover:text-blue-600 font-medium">Day 8 川越小江戶</a>
+                            <a href="#day9" class="px-4 py-2 hover:bg-blue-50 rounded-xl transition text-slate-600 hover:text-blue-600 font-medium">Day 9 成田山巡禮</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="lg:col-span-9 space-y-16">
+                
+                <!-- Day 1 -->
+                <section id="day1" class="day-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-slate-900 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">01</span>
+                        <h2 class="text-3xl font-bold text-slate-800">夜抵成田機場</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&q=80&w=800" alt="Narita Night">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?auto=format&fit=crop&q=80&w=800" alt="Hotel Interior">
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        <div class="itinerary-line">
+                            <div class="timeline-dot"></div>
+                            <span class="text-blue-600 font-bold">20:00</span>
+                            <p class="text-slate-700 font-medium">抵達成田機場（辦理入境與拿取行李）</p>
+                        </div>
+                        <div class="itinerary-line">
+                            <div class="timeline-dot"></div>
+                            <span class="text-blue-600 font-bold">21:00</span>
+                            <p class="text-slate-700 font-medium">租車櫃台取車 / 飯店接駁</p>
+                        </div>
+                        <div class="itinerary-line">
+                            <div class="timeline-dot"></div>
+                            <span class="text-blue-600 font-bold">22:30</span>
+                            <p class="text-slate-700 font-medium">入住與深夜補給，好好休息補眠</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Day 2 -->
+                <section id="day2" class="day-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-indigo-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">02</span>
+                        <h2 class="text-3xl font-bold text-slate-800">茨城海岸與溫泉之旅</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&q=80&w=800" alt="Hitachi Seaside Park">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1590483736622-39da8af7ec8a?auto=format&fit=crop&q=80&w=800" alt="Torii Gate Ocean">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1621506821199-a99a74997516?auto=format&fit=crop&q=80&w=800" alt="Japanese Seafood">
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12">
+                            <div>
+                                <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-indigo-600 font-bold">09:30</span><p>那珂湊漁港市場 (鮮美海味)</p></div>
+                                <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-indigo-600 font-bold">11:00</span><p>大洗磯前神社 (海上鳥居名景)</p></div>
+                            </div>
+                            <div>
+                                <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-indigo-600 font-bold">13:30</span><p>國營日立海濱公園 (季節花海)</p></div>
+                                <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-indigo-600 font-bold">18:30</span><p>鬼怒川溫泉旅館饗宴</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Day 3 -->
+                <section id="day3" class="day-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">03</span>
+                        <h2 class="text-3xl font-bold text-slate-800">日光世界遺產慢遊</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&q=80&w=800" alt="Nikko Toshogu">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1571406605797-e7f093259960?auto=format&fit=crop&q=80&w=800" alt="Chuzenji Lake">
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-emerald-600 font-bold">09:30</span><p>日光東照宮 (雕刻工藝巔峰)</p></div>
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-emerald-600 font-bold">14:00</span><p>華嚴瀑布與中禪寺湖散策</p></div>
+                    </div>
+                </section>
+
+                <!-- Day 4 -->
+                <section id="day4" class="day-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">04</span>
+                        <h2 class="text-3xl font-bold text-slate-800">尾瀨濕原大地健行</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=800" alt="Oze Marsh">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=800" alt="Green Forest">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1533281045237-772929e06385?auto=format&fit=crop&q=80&w=800" alt="Waterfall">
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-green-600 font-bold">09:30</span><p>尾瀨濕原木道健行 (沉浸大自然)</p></div>
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-green-600 font-bold">16:00</span><p>吹割瀑布 (體驗河床奇景)</p></div>
+                    </div>
+                </section>
+
+                <!-- Day 5 -->
+                <section id="day5" class="day-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-cyan-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">05</span>
+                        <h2 class="text-3xl font-bold text-slate-800">四萬藍湖與名湯草津</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800" alt="Kusatsu Yubatake">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1582979512210-99b6a53386f9?auto=format&fit=crop&q=80&w=800" alt="Blue Lake Shima">
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-cyan-600 font-bold">09:00</span><p>奧四萬湖 (神秘的四萬藍色)</p></div>
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-cyan-600 font-bold">15:30</span><p>草津溫泉湯畑 (日本第一名湯)</p></div>
+                    </div>
+                </section>
+
+                <!-- Day 6 -->
+                <section id="day6" class="day-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-amber-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">06</span>
+                        <h2 class="text-3xl font-bold text-slate-800">高山景觀與熔岩奇觀</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1540959733332-e9ab65c8a681?auto=format&fit=crop&q=80&w=800" alt="Mountain Road">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1596276122653-679c5c42830a?auto=format&fit=crop&q=80&w=800" alt="Lava Rock Garden">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1571408801701-a67b93a3832c?auto=format&fit=crop&q=80&w=800" alt="Mountain View">
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-amber-600 font-bold">08:30</span><p>自駕志賀草津道路 (雲端公路之旅)</p></div>
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-amber-600 font-bold">10:30</span><p>鬼押出園 (震撼的淺間山火山熔岩)</p></div>
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-amber-600 font-bold">15:00</span><p>抵達輕井澤雲場池</p></div>
+                    </div>
+                </section>
+
+                <!-- Day 7 -->
+                <section id="day7" class="day-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-rose-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">07</span>
+                        <h2 class="text-3xl font-bold text-slate-800">輕井澤藝術與森林散策</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1578272189445-24d4688ac06f?auto=format&fit=crop&q=80&w=800" alt="Stone Church">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1545161296-d9c2c241f2ad?auto=format&fit=crop&q=80&w=800" alt="Karuizawa Forest">
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-rose-600 font-bold">09:00</span><p>石之教會與高原教會巡禮</p></div>
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-rose-600 font-bold">11:00</span><p>榆樹街小鎮與王子 Outlet 購物</p></div>
+                    </div>
+                </section>
+
+                <!-- Day 8 -->
+                <section id="day8" class="day-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-neutral-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">08</span>
+                        <h2 class="text-3xl font-bold text-slate-800">川越江戶風情之旅</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=800" alt="Kawagoe Street">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1528114039593-4366cc08227d?auto=format&fit=crop&q=80&w=800" alt="Japanese Shrine">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1621506821216-0f81a7001962?auto=format&fit=crop&q=80&w=800" alt="Traditional Sweets">
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-neutral-600 font-bold">11:30</span><p>川越藏造老街 (穿越時空的江戶氛圍)</p></div>
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-neutral-600 font-bold">13:30</span><p>冰川神社祈福與伴手禮採買</p></div>
+                    </div>
+                </section>
+
+                <!-- Day 9 -->
+                <section id="day9" class="day-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-orange-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">09</span>
+                        <h2 class="text-3xl font-bold text-slate-800">成田山巡禮與賦歸</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1583070490793-1896798e4d1a?auto=format&fit=crop&q=80&w=800" alt="Naritasan Temple">
+                        </div>
+                        <div class="img-container shadow-md">
+                            <img src="https://images.unsplash.com/photo-1623861217684-256df737299a?auto=format&fit=crop&q=80&w=800" alt="Unagi Bowl">
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-orange-600 font-bold">09:00</span><p>成田山新勝寺 (最後的日式平靜)</p></div>
+                        <div class="itinerary-line"><div class="timeline-dot"></div><span class="text-orange-600 font-bold">11:30</span><p>品嚐表參道名物鰻魚飯，前往機場</p></div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-16 px-4 text-center">
+        <div class="max-w-md mx-auto">
+            <p class="text-2xl font-serif italic mb-4">"A journey of a thousand miles begins with a single step."</p>
+            <div class="h-1 w-20 bg-blue-500 mx-auto mb-6"></div>
+            <p class="opacity-50 text-sm tracking-widest uppercase">Safe Journey & Enjoy Your Self-Drive Trip</p>
+        </div>
+    </footer>
+
+</body>
+</html>
