@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關東秘境自駕之旅｜完整自駕導覽版</title>
+    <style>
+        :root {
+            --primary: #1f3d3a;
+            --secondary: #d4a373;
+            --accent: #e63946;
+            --bg: #f4f7f6;
+            --drive-bg: #f0f4f8;
+        }
+        body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; background: var(--bg); color: #333; margin: 0; padding: 0; line-height: 1.7; }
+        header { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 20px; }
+        header h1 { font-size: 2.5em; margin: 0; letter-spacing: 5px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        
+        .container { max-width: 900px; margin: -50px auto 40px; padding: 0 15px; }
+        .day-box { background: white; border-radius: 15px; overflow: hidden; margin-bottom: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #eee; }
+        .day-header { background: var(--primary); color: white; padding: 22px 25px; display: flex; justify-content: space-between; align-items: center; }
+        .day-header h2 { margin: 0; font-size: 1.4em; display: flex; align-items: center; }
+        .date-tag { background: rgba(255,255,255,0.2); padding: 2px 10px; border-radius: 5px; margin-right: 12px; font-family: monospace; }
+        .stay-info { background: var(--secondary); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+
+        .image-gallery { display: grid; grid-template-columns: 2.2fr 1fr; gap: 12px; padding: 18px; }
+        .image-gallery img { width: 100%; height: 280px; object-fit: cover; border-radius: 10px; }
+        .side-images { display: flex; flex-direction: column; gap: 12px; }
+        .side-images img { height: 134px; }
+
+        .content { padding: 0 25px 30px; }
+        
+        /* 自駕路況卡 */
+        .drive-info { background: var(--drive-bg); border-radius: 10px; padding: 15px; margin: 15px 0; border-left: 5px solid #2980b9; font-size: 0.9em; }
+        .drive-info b { color: #2980b9; display: block; margin-bottom: 5px; }
+        .drive-path { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+        .drive-path span { color: #555; }
+        .drive-path i { color: #999; font-style: normal; }
+
+        .timeline { border-left: 3px solid var(--secondary); padding-left: 25px; margin: 20px 0 25px 10px; }
+        .event { margin-bottom: 15px; position: relative; }
+        .event::before { content: ''; position: absolute; left: -34px; top: 8px; width: 14px; height: 14px; background: white; border: 3px solid var(--secondary); border-radius: 50%; }
+        .time { font-weight: bold; color: var(--primary); margin-right: 12px; font-family: monospace; font-size: 1.1em; }
+
+        .recommend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .info-card { padding: 15px; border-radius: 10px; font-size: 0.9em; border: 1px solid #eee; }
+        .eat { background: #fff1f0; }
+        .secret { background: #f6ffed; }
+
+        @media (max-width: 600px) {
+            .image-gallery { grid-template-columns: 1fr; }
+            .side-images { display: none; }
+            .recommend-grid { grid-template-columns: 1fr; }
+            .day-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>關東秘境自駕之旅</h1>
+    <p>8/21 - 8/29 自駕節奏精確版</p>
+</header>
+
+<div class="container">
+
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/21</span> Day 1｜抵達成田</h2>
+            <span class="stay-info">🏠 住宿區域：成田機場周邊</span>
+        </div>
+        <div class="image-gallery"><img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800"><div class="side-images"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400"><img src="https://images.unsplash.com/photo-1610915637251-41221147a408?w=400"></div></div>
+        <div class="content">
+            <div class="drive-info"><b>🚗 交通接駁：</b>機場抵達後搭乘飯店免費接駁車（約 10-15 分鐘）。今日尚未取車。</div>
+            <div class="timeline">
+                <div class="event"><span class="time">20:00</span> 班機抵達成田國際機場</div>
+                <div class="event"><span class="time">22:00</span> 入住飯店休息</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/22</span> Day 2｜茨城海岸秘境</h2>
+            <span class="stay-info">🏠 住宿區域：鬼怒川溫泉</span>
+        </div>
+        <div class="image-gallery"><img src="https://images.unsplash.com/photo-1582260659223-1d02c896944b?w=800"><div class="side-images"><img src="https://images.unsplash.com/photo-1570648632310-7434193856b3?w=400"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400"></div></div>
+        <div class="content">
+            <div class="drive-info">
+                <b>🚗 本日車程總計：約 3 小時 30 分鐘 (230km)</b>
+                <div class="drive-path">成田取車 ➔ 1h 20m ➔ 那珂湊漁港 ➔ 15m ➔ 大洗神社 ➔ 1h 50m ➔ 鬼怒川</div>
+            </div>
+            <div class="timeline">
+                <div class="event"><span class="time">08:30</span> <b>準時出發</b>：前往機場租車櫃台辦理取車</div>
+                <div class="event"><span class="time">11:00</span> 抵達那珂湊漁港享用海鮮午餐</div>
+                <div class="event"><span class="time">14:00</span> 大洗磯前神社 (海中鳥居)</div>
+                <div class="event"><span class="time">17:30</span> 抵達鬼怒川溫泉飯店</div>
+            </div>
+            <div class="recommend-grid">
+                <div class="info-card eat"><b>🍴 推薦：</b>漁港現剖生蠔、迴轉壽司。</div>
+                <div class="info-card secret"><b>㊙️ 秘境：</b>酒列磯前神社的綠色參道隧道。</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/23</span> Day 3｜日光世界遺產</h2>
+            <span class="stay-info">🏠 住宿區域：鬼怒川溫泉</span>
+        </div>
+        <div class="image-gallery"><img src="https://images.unsplash.com/photo-1542931415-3253724c0384?w=800"><div class="side-images"><img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=400"><img src="https://images.unsplash.com/photo-1505816014357-96b5ff457e9a?w=400"></div></div>
+        <div class="content">
+            <div class="drive-info">
+                <b>🚗 本日車程總計：約 2 小時 (山路為主)</b>
+                <div class="drive-path">鬼怒川 ➔ 30m ➔ 東照宮 ➔ 40m ➔ 中禪寺湖/華嚴瀑布 ➔ 45m ➔ 鬼怒川</div>
+            </div>
+            <div class="timeline">
+                <div class="event"><span class="time">08:30</span> <b>準時出發</b>：避開東照宮團體遊客潮</div>
+                <div class="event"><span class="time">09:00</span> 日光東照宮深度參觀</div>
+                <div class="event"><span class="time">13:30</span> 挑戰伊呂波山道 (Irohazaka) 前往華嚴瀑布</div>
+                <div class="event"><span class="time">16:30</span> 返回鬼怒川溫泉街散策</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/24</span> Day 4｜群馬秘境與草津</h2>
+            <span class="stay-info">🏠 住宿區域：草津溫泉</span>
+        </div>
+        <div class="image-gallery"><img src="https://images.unsplash.com/photo-1590230441939-60747c3d001c?w=800"><div class="side-images"><img src="https://images.unsplash.com/photo-1528164344705-47542687990d?w=400"><img src="https://images.unsplash.com/photo-1576431713203-0599a9a0890d?w=400"></div></div>
+        <div class="content">
+            <div class="drive-info">
+                <b>🚗 本日車程總計：約 3 小時 15 分鐘</b>
+                <div class="drive-path">鬼怒川 ➔ 2h ➔ 奧四萬湖 ➔ 15m ➔ 積善館 ➔ 1h ➔ 草津溫泉</div>
+            </div>
+            <div class="timeline">
+                <div class="event"><span class="time">08:00</span> <b>早起出發</b>：今日路程較長且山路多</div>
+                <div class="event"><span class="time">10:30</span> 奧四萬湖：尋找四萬藍 (Shima Blue)</div>
+                <div class="event"><span class="time">12:30</span> 積善館 (神隱少女紅橋) 午餐</div>
+                <div class="event"><span class="time">15:30</span> 抵達草津溫泉，享受名湯與湯畑夜景</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/25</span> Day 5｜高山絕景與北齋秘境</h2>
+            <span class="stay-info">🏠 住宿區域：長野市區 (Nagano City)</span>
+        </div>
+        <div class="image-gallery">
+            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=800&q=80" alt="善光寺">
+            <div class="side-images">
+                <img src="https://images.unsplash.com/photo-1571506165871-ee72a35bc9d4?auto=format&fit=crop&w=400&q=80" alt="小布施老街">
+                <img src="https://images.unsplash.com/photo-1476156088841-b3f719d46307?auto=format&fit=crop&w=400&q=80" alt="景觀公路">
+            </div>
+        </div>
+        <div class="content">
+            <div class="drive-info">
+                <b>🚗 本日車程總計：約 2 小時 45 分鐘</b>
+                <div class="drive-path">草津 ➔ 50m ➔ 國道最高點 ➔ 1h 10m ➔ 小布施(秘境) ➔ 45m ➔ 善光寺</div>
+            </div>
+            <div class="timeline">
+                <div class="event"><span class="time">08:30</span> <b>準時出發</b>：經志賀草津高原道路，感受海拔 2000 米的清爽空氣</div>
+                <div class="event"><span class="time">09:30</span> <b>日本國道最高點碑</b>：下車拍攝壯闊的阿爾卑斯連峰與雲海</div>
+                <div class="event"><span class="time">11:30</span> <b>小布施 (秘境點)</b>：造訪「岩松院」觀賞葛飾北齋生前最後的巨大天頂畫</div>
+                <div class="event"><span class="time">13:00</span> 小布施老街散策與午餐：漫步在鋪滿栗木的「栗之小徑」</div>
+                <div class="event"><span class="time">15:30</span> <b>善光寺</b>：千年古剎參拜，在黃昏前體驗戒壇巡禮</div>
+                <div class="event"><span class="time">18:00</span> 抵達長野市區，享受熱騰騰的信州味噌鍋</div>
+            </div>
+            <div class="recommend-grid">
+                <div class="info-card eat">
+                    <div class="card-title"><span>🍴</span>在地美食</div>
+                    小布施是栗子故鄉！必吃「栗子飯」或浮誇的「朱雀栗子蒙布朗」，甜而不膩的職人風味。
+                </div>
+                <div class="info-card secret">
+                    <div class="card-title"><span>㊙️</span>秘境提示</div>
+                    「岩松院」的鳳凰圖據說無論站在哪個角度，鳳凰的眼睛都會盯著你看，是震撼視覺的藝術體驗。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/26</span> Day 6｜戶隱森林．輕井澤</h2>
+            <span class="stay-info">🏠 住宿區域：輕井澤</span>
+        </div>
+        <div class="image-gallery"><img src="https://images.unsplash.com/photo-1578469640199-1c3583bb99c9?w=800"><div class="side-images"><img src="https://images.unsplash.com/photo-1589408643190-348637651086?w=400"><img src="https://images.unsplash.com/photo-1520260114866-519228e7d299?w=400"></div></div>
+        <div class="content">
+            <div class="drive-info">
+                <b>🚗 本日車程總計：約 2 小時 30 分鐘</b>
+                <div class="drive-path">長野 ➔ 45m ➔ 戶隱神社奧社 ➔ 15m ➔ 鏡池 ➔ 1h 30m ➔ 輕井澤</div>
+            </div>
+            <div class="timeline">
+                <div class="event"><span class="time">08:30</span> <b>出發</b>：前往戶隱神話森林</div>
+                <div class="event"><span class="time">09:30</span> 戶隱神社奧社杉木林參道 (步行約 40 分)</div>
+                <div class="event"><span class="time">12:00</span> 戶隱蕎麥麵午餐</div>
+                <div class="event"><span class="time">16:00</span> 抵達避暑勝地輕井澤</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/27</span> Day 7｜輕井澤悠閒生活</h2>
+            <span class="stay-info">🏠 住宿區域：輕井澤</span>
+        </div>
+        <div class="image-gallery"><img src="https://images.unsplash.com/photo-1623150502742-6a849aa94be4?w=800"><div class="side-images"><img src="https://images.unsplash.com/photo-1605649441119-9154f85e4922?w=400"><img src="https://images.unsplash.com/photo-1528164344705-47542687990d?w=400"></div></div>
+        <div class="content">
+            <div class="drive-info"><b>🚗 當地短程移動：</b>輕井澤景點間車程約 10-15 分鐘，建議租借腳踏車或短距離駕車。</div>
+            <div class="timeline">
+                <div class="event"><span class="time">09:30</span> 石之教會與高原教會</div>
+                <div class="event"><span class="time">13:00</span> 榆樹街小鎮與雲場池散步</div>
+                <div class="event"><span class="time">15:00</span> 輕井澤王子 Outlet 購物</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/28</span> Day 8｜小江戶川越．歸途</h2>
+            <span class="stay-info">🏠 住宿區域：成田機場周邊</span>
+        </div>
+        <div class="image-gallery"><img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800"><div class="side-images"><img src="https://images.unsplash.com/photo-1510079551460-2445885f8c6b?w=400"><img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400"></div></div>
+        <div class="content">
+            <div class="drive-info">
+                <b>🚗 本日車程總計：約 3 小時 15 分鐘</b>
+                <div class="drive-path">輕井澤 ➔ 1h 45m ➔ 川越老街 ➔ 1h 30m ➔ 成田還車</div>
+            </div>
+            <div class="timeline">
+                <div class="event"><span class="time">09:00</span> <b>出發</b>：離開輕井澤前往埼玉川越</div>
+                <div class="event"><span class="time">11:00</span> 川越小江戶藏造老街、冰川神社</div>
+                <div class="event"><span class="time">17:00</span> 返抵成田機場租車處還車，完成手續</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/29</span> Day 9｜千年古剎與歸途</h2>
+            <span class="stay-info">🏠 住宿區域：溫暖的家</span>
+        </div>
+        <div class="image-gallery"><img src="https://images.unsplash.com/photo-1627471191062-8116b49206d4?w=800"><div class="side-images"><img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400"><img src="https://images.unsplash.com/photo-1605649441119-9154f85e4922?w=400"></div></div>
+        <div class="content">
+            <div class="drive-info"><b>🚗 交通接駁：</b>飯店接駁車前往機場。今日無自駕。</div>
+            <div class="timeline">
+                <div class="event"><span class="time">09:30</span> 成田山新勝寺參拜</div>
+                <div class="event"><span class="time">11:30</span> 表參道川豐鰻魚飯 (旅程最後大餐)</div>
+                <div class="event"><span class="time">14:30</span> 前往機場辦理登機，帶著滿滿回憶返台</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
