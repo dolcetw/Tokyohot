@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>關東秘境自駕之旅｜8/21-8/29 完整圖文導覽</title>
+    <title>關東秘境自駕之旅｜8/21-8/29 完整導覽</title>
     <style>
         :root {
             --primary: #1f3d3a;    /* 深森林綠 */
@@ -25,7 +25,7 @@
         .stay-info { background: var(--secondary); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
 
         .image-gallery { display: grid; grid-template-columns: 2.2fr 1fr; gap: 12px; padding: 18px; }
-        .image-gallery img { width: 100%; height: 280px; object-fit: cover; border-radius: 10px; }
+        .image-gallery img { width: 100%; height: 280px; object-fit: cover; border-radius: 10px; transition: 0.3s; }
         .side-images { display: flex; flex-direction: column; gap: 12px; }
         .side-images img { height: 134px; }
 
@@ -36,7 +36,7 @@
         .time { font-weight: bold; color: var(--primary); margin-right: 12px; font-family: 'Courier New', monospace; font-size: 1.1em; }
 
         .recommend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px; }
-        .info-card { padding: 18px; border-radius: 12px; font-size: 0.95em; border: 1px solid #eee; }
+        .info-card { padding: 18px; border-radius: 12px; font-size: 0.95em; position: relative; border: 1px solid #eee; }
         .eat { background: #fff1f0; border: 1px solid #ffa39e; }
         .secret { background: #f6ffed; border: 1px solid #b7eb8f; }
         .card-title { font-weight: bold; margin-bottom: 8px; color: #444; }
@@ -56,7 +56,7 @@
 
 <header>
     <h1>關東秘境自駕之旅</h1>
-    <p>8/21 - 8/29 森林、名湯與世界遺產之約</p>
+    <p>8/21 - 8/29 日本深度探索版</p>
 </header>
 
 <div class="container">
@@ -64,23 +64,20 @@
     <div class="day-box">
         <div class="day-header">
             <h2><span class="date-tag">8/21</span> Day 1｜抵達成田</h2>
-            <span class="stay-info">🏠 住宿：成田機場周邊</span>
+            <span class="stay-info">🏠 住宿：成田機場周邊地區飯店</span>
         </div>
         <div class="image-gallery">
-            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800">
             <div class="side-images">
                 <img src="https://images.unsplash.com/photo-1610915637251-41221147a408?w=400">
-                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400">
+                <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=400">
             </div>
         </div>
         <div class="content">
             <div class="timeline">
                 <div class="event"><span class="time">20:00</span> 班機抵達成田國際機場，辦理入境手續</div>
-                <div class="event"><span class="time">21:30</span> 搭乘飯店接駁巴士前往入住飯店</div>
-                <div class="event"><span class="time">22:00</span> 飯店 Check-in 休息，買超商零食備戰明天</div>
-            </div>
-            <div class="map-section">
-                <a href="https://www.google.com/maps/dir/Narita+International+Airport,+Chiba/Hilton+Narita,+456+Kosuge,+Narita,+Chiba+286-0127,+Japan/" target="_blank" class="map-btn">📍 查看今日路線 (機場至飯店)</a>
+                <div class="event"><span class="time">21:30</span> 搭乘接駁車前往「成田機場周邊地區飯店」</div>
+                <div class="event"><span class="time">22:00</span> 飯店 Check-in 休息，養精蓄銳</div>
             </div>
         </div>
     </div>
@@ -88,7 +85,7 @@
     <div class="day-box">
         <div class="day-header">
             <h2><span class="date-tag">8/22</span> Day 2｜茨城海岸秘境</h2>
-            <span class="stay-info">🏠 住宿：鬼怒川溫泉</span>
+            <span class="stay-info">🏠 住宿：鬼怒川溫泉地區地區飯店</span>
         </div>
         <div class="image-gallery">
             <img src="https://images.unsplash.com/photo-1582260659223-1d02c896944b?w=800">
@@ -99,21 +96,21 @@
         </div>
         <div class="content">
             <div class="timeline">
-                <div class="event"><span class="time">09:00</span> 飯店出發前往成田機場取車櫃台</div>
-                <div class="event"><span class="time">11:00</span> <b>那珂湊漁港</b>：海味市場現剖生蠔下午餐</div>
-                <div class="event"><span class="time">14:00</span> <b>大洗磯前神社</b>：朝聖太平洋中的「神磯鳥居」</div>
-                <div class="event"><span class="time">17:30</span> 抵達鬼怒川溫泉入住，享受懷石料理</div>
+                <div class="event"><span class="time">09:00</span> 從 <b>「成田機場周邊地區飯店」</b> 出發取車</div>
+                <div class="event"><span class="time">11:00</span> <b>那珂湊漁港</b>：海鮮市場巡禮，現剖大生蠔午餐</div>
+                <div class="event"><span class="time">14:00</span> <b>大洗磯前神社</b>：太平洋海中鳥居壯麗景致</div>
+                <div class="event"><span class="time">17:30</span> 抵達 <b>「鬼怒川溫泉地區飯店」</b> 入住享用溫泉</div>
             </div>
             <div class="map-section">
-                <a href="https://www.google.com/maps/dir/Narita+Airport/Nakaminato+Fish+Market/Oarai+Isosaki+Shrine/Kinugawa+Onsen/" target="_blank" class="map-btn">📍 查看今日路線 (車程約 2.5小時)</a>
+                <a href="https://www.google.com/maps/dir/Narita+Airport/Nakaminato+Fish+Market/Oarai+Isosaki-jinja/Kinugawa+Onsen" target="_blank" class="map-btn">📍 查看今日導覽路線</a>
             </div>
         </div>
     </div>
 
     <div class="day-box">
         <div class="day-header">
-            <h2><span class="date-tag">8/23</span> Day 3｜日光世界遺產</h2>
-            <span class="stay-info">🏠 住宿：鬼怒川溫泉</span>
+            <h2><span class="date-tag">8/23</span> Day 3｜日光世界遺產全覽</h2>
+            <span class="stay-info">🏠 住宿：鬼怒川溫泉地區飯店 (連住)</span>
         </div>
         <div class="image-gallery">
             <img src="https://images.unsplash.com/photo-1542931415-3253724c0384?w=800">
@@ -124,17 +121,19 @@
         </div>
         <div class="content">
             <div class="timeline">
-                <div class="event"><span class="time">09:00</span> <b>日光東照宮</b>：領略德川幕府極致建築美學</div>
-                <div class="event"><span class="time">12:30</span> <b>伊呂波山道</b>：體驗著名的 48 個髮夾彎景觀公路</div>
-                <div class="event"><span class="time">14:30</span> <b>華嚴瀑布</b>：日本三名瀑之首，體驗震撼落差</div>
-                <div class="event"><span class="time">16:00</span> <b>中禪寺湖</b>：海拔 1,269 公尺的湖畔散策</div>
+                <div class="event"><span class="time">09:00</span> 從 <b>「鬼怒川溫泉地區飯店」</b> 出發</div>
+                <div class="event"><span class="time">09:30</span> <b>日光東照宮</b>：領略德川幕府最輝煌的極致建築美學</div>
+                <div class="event"><span class="time">12:30</span> <b>伊呂波山道</b>：挑戰著名的 48 個髮夾彎景觀公路</div>
+                <div class="event"><span class="time">14:00</span> <b>華嚴瀑布</b>：日本三名瀑，震撼的百米落差</div>
+                <div class="event"><span class="time">16:00</span> <b>中禪寺湖</b>：海拔 1,269 公尺的湛藍湖泊散策</div>
+                <div class="event"><span class="time">17:30</span> 返回 <b>「鬼怒川溫泉地區飯店」</b></div>
             </div>
             <div class="recommend-grid">
-                <div class="info-card eat">🍴 <b>在地美食：</b>日光名物「湯波 (腐皮) 炸饅頭」，外脆內嫩，鹹甜適中。</div>
-                <div class="info-card secret">㊙️ <b>私房提示：</b>東照宮建議早點去，避開團客，拍照光線也更美。</div>
+                <div class="info-card eat">🍴 <b>在地美食：</b>日光名物「湯波 (腐皮) 炸饅頭」，鹹甜口感是絕配。</div>
+                <div class="info-card secret">㊙️ <b>私房提示：</b>東照宮建議預留 2 小時，建築細節非常多。</div>
             </div>
             <div class="map-section">
-                <a href="https://www.google.com/maps/dir/Kinugawa+Onsen/Nikko+Toshogu/Lake+Chuzenji/Kegon+Falls/Kinugawa+Onsen/" target="_blank" class="map-btn">📍 查看今日路線 (日光全區循環)</a>
+                <a href="https://www.google.com/maps/dir/Kinugawa+Onsen/Nikko+Toshogu/Lake+Chuzenji/Kegon+Falls/Kinugawa+Onsen" target="_blank" class="map-btn">📍 查看今日路線 (日光全導覽)</a>
             </div>
         </div>
     </div>
@@ -142,7 +141,7 @@
     <div class="day-box">
         <div class="day-header">
             <h2><span class="date-tag">8/24</span> Day 4｜群馬名湯巡禮</h2>
-            <span class="stay-info">🏠 住宿：草津溫泉</span>
+            <span class="stay-info">🏠 住宿：草津溫泉地區飯店</span>
         </div>
         <div class="image-gallery">
             <img src="https://images.unsplash.com/photo-1590230441939-60747c3d001c?w=800">
@@ -153,21 +152,21 @@
         </div>
         <div class="content">
             <div class="timeline">
-                <div class="event"><span class="time">10:00</span> <b>奧四萬湖</b>：尋訪絕美「四萬藍」湖泊</div>
-                <div class="event"><span class="time">12:30</span> <b>積善館</b>：站在紅橋前，進入神隱少女奇幻世界</div>
-                <div class="event"><span class="time">15:30</span> 抵達 <b>草津溫泉</b>，更換浴衣前往湯畑</div>
-                <div class="event"><span class="time">19:00</span> <b>湯畑夜遊</b>：觀賞夜間華麗點燈，享受名湯</div>
+                <div class="event"><span class="time">10:00</span> 從 <b>「鬼怒川溫泉地區飯店」</b> 辦理退房出發</div>
+                <div class="event"><span class="time">12:00</span> <b>奧四萬湖</b>：尋訪絕美「四萬藍」湖泊與積善館紅橋</div>
+                <div class="event"><span class="time">15:30</span> 抵達 <b>「草津溫泉地區飯店」</b> Check-in</div>
+                <div class="event"><span class="time">19:00</span> <b>湯畑夜遊</b>：觀看全日本第一名的溫泉街點燈</div>
             </div>
             <div class="map-section">
-                <a href="https://www.google.com/maps/dir/Kinugawa+Onsen/Lake+Okushima/Sekizenkan/Kusatsu+Onsen+Yubatake/" target="_blank" class="map-btn">📍 查看今日路線 (栃木至群馬移動)</a>
+                <a href="https://www.google.com/maps/dir/Kinugawa+Onsen/Lake+Okushima/Sekizenkan/Kusatsu+Onsen" target="_blank" class="map-btn">📍 查看今日路線 (車程較長建議休息)</a>
             </div>
         </div>
     </div>
 
     <div class="day-box">
         <div class="day-header">
-            <h2><span class="date-tag">8/25</span> Day 5｜國道最高點與善光寺</h2>
-            <span class="stay-info">🏠 住宿：長野市區</span>
+            <h2><span class="date-tag">8/25</span> Day 5｜最高國道與善光寺</h2>
+            <span class="stay-info">🏠 住宿：長野市區飯店</span>
         </div>
         <div class="image-gallery">
             <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800">
@@ -178,12 +177,13 @@
         </div>
         <div class="content">
             <div class="timeline">
-                <div class="event"><span class="time">09:30</span> 駕駛 <b>志賀草津道路</b>，登上海拔 2172m 國道最高點</div>
+                <div class="event"><span class="time">09:30</span> 從 <b>「草津溫泉地區飯店」</b> 出發</div>
+                <div class="event"><span class="time">10:30</span> <b>志賀草津道路</b>：橫越國道最高點 (海拔 2172m)</div>
                 <div class="event"><span class="time">14:00</span> <b>善光寺</b>：一生必去一次的千年古剎參拜</div>
-                <div class="event"><span class="time">16:30</span> 長野表參道散策，品嚐信州蕎麥麵與御燒餅</div>
+                <div class="event"><span class="time">17:00</span> 入住 <b>「長野市區飯店」</b> 品嚐信州蕎麥麵</div>
             </div>
             <div class="map-section">
-                <a href="https://www.google.com/maps/dir/Kusatsu+Onsen/Japan+National+Route+Highest+Point/Zenko-ji/Nagano+Station/" target="_blank" class="map-btn">📍 查看今日路線 (景觀公路自駕)</a>
+                <a href="https://www.google.com/maps/dir/Kusatsu+Onsen/National+Route+Highest+Point/Zenko-ji/Nagano" target="_blank" class="map-btn">📍 查看今日景觀自駕路線</a>
             </div>
         </div>
     </div>
@@ -191,7 +191,7 @@
     <div class="day-box">
         <div class="day-header">
             <h2><span class="date-tag">8/26</span> Day 6｜神話森林與鏡之池</h2>
-            <span class="stay-info">🏠 住宿：輕井澤</span>
+            <span class="stay-info">🏠 住宿：輕井澤地區飯店</span>
         </div>
         <div class="image-gallery">
             <img src="https://images.unsplash.com/photo-1578469640199-1c3583bb99c9?w=800">
@@ -202,12 +202,13 @@
         </div>
         <div class="content">
             <div class="timeline">
-                <div class="event"><span class="time">09:00</span> <b>戶隱神社奧社</b>：步行在壯麗的巨杉參道</div>
-                <div class="event"><span class="time">12:00</span> <b>戶隱鏡池</b>：欣賞山岳映照在水面的靜謐</div>
-                <div class="event"><span class="time">15:30</span> 前往度假聖地 <b>輕井澤</b>，享受森林晚餐</div>
+                <div class="event"><span class="time">09:00</span> 從 <b>「長野市區飯店」</b> 出發</div>
+                <div class="event"><span class="time">10:00</span> <b>戶隱神社奧社</b>：步行在壯麗的五百年巨杉參道</div>
+                <div class="event"><span class="time">12:30</span> <b>戶隱鏡池</b>：欣賞山岳映在水面的絕美倒影</div>
+                <div class="event"><span class="time">16:30</span> 抵達 <b>「輕井澤地區飯店」</b> 享受森林時光</div>
             </div>
             <div class="map-section">
-                <a href="https://www.google.com/maps/dir/Nagano/Togakushi+Shrine+Okusha+Entrance/Kagami-ike+Lake/Karuizawa/" target="_blank" class="map-btn">📍 查看今日路線 (森林與能量景點)</a>
+                <a href="https://www.google.com/maps/dir/Nagano/Togakushi+Jinja+Okusha/Kagami-ike/Karuizawa" target="_blank" class="map-btn">📍 查看今日神話森林路線</a>
             </div>
         </div>
     </div>
@@ -215,7 +216,7 @@
     <div class="day-box">
         <div class="day-header">
             <h2><span class="date-tag">8/27</span> Day 7｜輕井澤悠閒慢活</h2>
-            <span class="stay-info">🏠 住宿：輕井澤</span>
+            <span class="stay-info">🏠 住宿：輕井澤地區飯店 (連住)</span>
         </div>
         <div class="image-gallery">
             <img src="https://images.unsplash.com/photo-1623150502742-6a849aa94be4?w=800">
@@ -226,20 +227,21 @@
         </div>
         <div class="content">
             <div class="timeline">
-                <div class="event"><span class="time">09:30</span> <b>石之教會</b> 與 <b>星野榆樹街小鎮</b></div>
-                <div class="event"><span class="time">13:30</span> <b>雲場池</b>：天鵝湖美景或前往舊輕井澤銀座通</div>
-                <div class="event"><span class="time">15:00</span> <b>王子 Outlet</b>：在廣大草皮旁的血拼時光</div>
+                <div class="event"><span class="time">09:30</span> 從 <b>「輕井澤地區飯店」</b> 出發悠閒探索</div>
+                <div class="event"><span class="time">10:00</span> <b>石之教會</b> / 高原教會：森林中的建築詩篇</div>
+                <div class="event"><span class="time">13:30</span> <b>星野榆樹街小鎮</b>：溪水聲中的森林午餐與咖啡</div>
+                <div class="event"><span class="time">15:00</span> <b>王子 Outlet</b>：廣大草皮旁的度假購物體驗</div>
             </div>
             <div class="map-section">
-                <a href="https://www.google.com/maps/dir/Karuizawa/Stone+Church/Harunire+Terrace/Kumoba+Pond/Karuizawa+Prince+Shopping+Plaza/" target="_blank" class="map-btn">📍 查看今日路線 (市區輕鬆巡禮)</a>
+                <a href="https://www.google.com/maps/dir/Karuizawa/Stone+Church/Harunire+Terrace/Karuizawa+Prince+Shopping+Plaza" target="_blank" class="map-btn">📍 查看今日輕井澤循環路線</a>
             </div>
         </div>
     </div>
 
     <div class="day-box">
         <div class="day-header">
-            <h2><span class="date-tag">8/28</span> Day 8｜小江戶時光倒流</h2>
-            <span class="stay-info">🏠 住宿：成田機場周邊</span>
+            <h2><span class="date-tag">8/28</span> Day 8｜小江戶川越時光</h2>
+            <span class="stay-info">🏠 住宿：成田機場周邊地區飯店</span>
         </div>
         <div class="image-gallery">
             <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800">
@@ -250,14 +252,13 @@
         </div>
         <div class="content">
             <div class="timeline">
-                <div class="event"><span class="time">10:00</span> 從輕井澤出發，前往小江戶 <b>川越</b></div>
-                <div class="event"><span class="time">12:30</span> <b>藏造老街</b>：漫步在江戶風情的建築間</div>
-                <div class="event"><span class="time">14:30</span> <b>冰川神社</b>：釣鯛魚籤祈福，求得好緣份</div>
-                <div class="event"><span class="time">17:30</span> 返回成田機場完成還車手續，入住飯店</div>
+                <div class="event"><span class="time">09:30</span> 從 <b>「輕井澤地區飯店」</b> 辦理退房出發</div>
+                <div class="event"><span class="time">12:30</span> <b>川越藏造老街</b>：江戶風情鐘樓與冰川神社</div>
+                <div class="event"><span class="time">17:00</span> 抵達機場周邊還車並入住 <b>「成田機場周邊地區飯店」</b></div>
             </div>
             <div class="map-section">
-                <p>📍 今日開車路程最長，建議中途在 SA 休息區稍微休息。</p>
-                <a href="https://www.google.com/maps/dir/Karuizawa/Kawagoe/Kawagoe+Hikawa+Shrine/Narita+Airport/" target="_blank" class="map-btn">📍 查看今日路線 (長途跨區移動)</a>
+                <p>📍 今日開車路程最長，請預留體力與還車時間。</p>
+                <a href="https://www.google.com/maps/dir/Karuizawa/Kawagoe/Narita+Airport" target="_blank" class="map-btn">📍 查看今日返程路線</a>
             </div>
         </div>
     </div>
@@ -276,13 +277,10 @@
         </div>
         <div class="content">
             <div class="timeline">
-                <div class="event"><span class="time">09:30</span> <b>成田山新勝寺</b>：旅程最後的千年古剎祈福</div>
-                <div class="event"><span class="time">11:30</span> 表參道 <b>川豐鰻魚飯</b>：品嚐現剖現烤的職人美味</div>
-                <div class="event"><span class="time">14:30</span> 抵達成田機場辦理報到手續</div>
-                <div class="event"><span class="time">17:00</span> 帶著滿滿的回憶，搭機返台</div>
-            </div>
-            <div class="map-section">
-                <a href="https://www.google.com/maps/dir/Hilton+Narita/Naritasan+Shinsho-ji/Kawatoyo+Main+Shop/Narita+International+Airport/" target="_blank" class="map-btn">📍 查看今日路線 (成田最後巡禮)</a>
+                <div class="event"><span class="time">09:30</span> 從 <b>「成田機場周邊地區飯店」</b> 出發</div>
+                <div class="event"><span class="time">10:00</span> <b>成田山新勝寺</b>：旅程最後的千年古剎祈福</div>
+                <div class="event"><span class="time">12:00</span> <b>川豐鰻魚飯</b>：職人炭火現烤，最完美的句點</div>
+                <div class="event"><span class="time">14:30</span> 抵達成田機場辦理報到，準備搭機返台</div>
             </div>
         </div>
     </div>
