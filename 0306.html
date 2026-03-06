@@ -3,40 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>關東秘境自駕之旅｜完整導覽版</title>
+    <title>關東秘境自駕之旅｜9天8夜完整導覽</title>
     <style>
         :root {
-            --primary: #1f3d3a;
-            --secondary: #d4a373;
-            --accent: #e63946;
+            --primary: #1f3d3a;    /* 深森林綠 */
+            --secondary: #d4a373;  /* 質感金沙 */
+            --accent: #e63946;     /* 亮點紅 */
             --bg: #f4f7f6;
         }
         body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; background: var(--bg); color: #333; margin: 0; padding: 0; line-height: 1.7; }
-        header { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 80px 20px; }
-        header h1 { font-size: 2.5em; margin: 0; letter-spacing: 5px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
-        .container { max-width: 900px; margin: -40px auto 40px; padding: 0 15px; }
-        .day-box { background: white; border-radius: 15px; overflow: hidden; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #eee; }
-        .day-header { background: var(--primary); color: white; padding: 20px 25px; display: flex; justify-content: space-between; align-items: center; }
-        .day-header h2 { margin: 0; font-size: 1.4em; }
-        .stay-info { background: var(--secondary); padding: 4px 12px; border-radius: 5px; font-size: 0.9em; }
-        .image-gallery { display: grid; grid-template-columns: 2fr 1fr; gap: 10px; padding: 15px; }
-        .image-gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; }
-        .side-images { display: flex; flex-direction: column; gap: 10px; }
-        .side-images img { height: 120px; }
-        .content { padding: 25px; }
-        .timeline { border-left: 3px solid var(--secondary); padding-left: 20px; margin-bottom: 25px; }
-        .event { margin-bottom: 15px; position: relative; }
-        .event::before { content: ''; position: absolute; left: -28px; top: 8px; width: 12px; height: 12px; background: var(--secondary); border-radius: 50%; }
-        .time { font-weight: bold; color: var(--primary); margin-right: 10px; font-family: monospace; font-size: 1.1em; }
-        .recommend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
-        .info-card { padding: 15px; border-radius: 10px; font-size: 0.95em; }
+        header { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 20px; }
+        header h1 { font-size: 2.8em; margin: 0; letter-spacing: 5px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        header p { font-size: 1.2em; opacity: 0.9; margin-top: 10px; letter-spacing: 2px; }
+        
+        .container { max-width: 900px; margin: -50px auto 40px; padding: 0 15px; }
+        
+        /* 每日卡片樣式 */
+        .day-box { background: white; border-radius: 15px; overflow: hidden; margin-bottom: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #eee; }
+        .day-header { background: var(--primary); color: white; padding: 22px 25px; display: flex; justify-content: space-between; align-items: center; }
+        .day-header h2 { margin: 0; font-size: 1.5em; display: flex; align-items: center; }
+        .day-header h2 .date-tag { background: rgba(255,255,255,0.2); padding: 2px 10px; border-radius: 5px; margin-right: 12px; font-family: monospace; font-size: 0.9em; }
+        .stay-info { background: var(--secondary); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+
+        /* 圖片網格 */
+        .image-gallery { display: grid; grid-template-columns: 2.2fr 1fr; gap: 12px; padding: 18px; }
+        .image-gallery img { width: 100%; height: 280px; object-fit: cover; border-radius: 10px; transition: 0.3s; }
+        .image-gallery img:hover { filter: brightness(1.1); }
+        .side-images { display: flex; flex-direction: column; gap: 12px; }
+        .side-images img { height: 134px; }
+
+        /* 行程內容 */
+        .content { padding: 0 25px 30px; }
+        .timeline { border-left: 3px solid var(--secondary); padding-left: 25px; margin: 20px 0 30px 10px; }
+        .event { margin-bottom: 18px; position: relative; }
+        .event::before { content: ''; position: absolute; left: -34px; top: 8px; width: 14px; height: 14px; background: white; border: 3px solid var(--secondary); border-radius: 50%; }
+        .time { font-weight: bold; color: var(--primary); margin-right: 12px; font-family: 'Courier New', Courier, monospace; font-size: 1.1em; }
+
+        /* 推薦區塊 */
+        .recommend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .info-card { padding: 18px; border-radius: 12px; font-size: 0.95em; position: relative; }
         .eat { background: #fff1f0; border: 1px solid #ffa39e; }
         .secret { background: #f6ffed; border: 1px solid #b7eb8f; }
-        .card-title { font-weight: bold; display: block; margin-bottom: 5px; }
+        .card-title { font-weight: bold; display: flex; align-items: center; margin-bottom: 8px; color: #444; }
+        .card-title span { margin-right: 8px; font-size: 1.2em; }
+
         @media (max-width: 600px) {
             .image-gallery { grid-template-columns: 1fr; }
             .side-images { display: none; }
             .recommend-grid { grid-template-columns: 1fr; }
+            .day-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+            header h1 { font-size: 1.8em; }
         }
     </style>
 </head>
@@ -44,116 +60,240 @@
 
 <header>
     <h1>關東秘境自駕之旅</h1>
-    <p>EXPLORE KANTO: 9 DAYS SELF-DRIVE ADVENTURE</p>
+    <p>8/21 - 8/29 深度日本．森林與溫泉之約</p>
 </header>
 
 <div class="container">
 
     <div class="day-box">
         <div class="day-header">
-            <h2>Day 5｜長野．國道最高點與古剎</h2>
-            <span class="stay-info">🏠 住宿：長野市區 (Nagano City)</span>
+            <h2><span class="date-tag">8/21</span> Day 1｜抵達成田</h2>
+            <span class="stay-info">🏠 住宿區域：成田機場周邊</span>
+        </div>
+        <div class="image-gallery">
+            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=800&q=80" alt="Narita">
+            <div class="side-images">
+                <img src="https://images.unsplash.com/photo-1610915637251-41221147a408?auto=format&fit=crop&w=400&q=80" alt="NRT">
+                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=400&q=80" alt="Hotel">
+            </div>
+        </div>
+        <div class="content">
+            <div class="timeline">
+                <div class="event"><span class="time">20:00</span> 班機抵達成田國際機場，完成入境手續</div>
+                <div class="event"><span class="time">21:30</span> 搭乘接駁車前往飯店，領取便利商店美食</div>
+                <div class="event"><span class="time">22:00</span> 飯店 Check-in 休息，準備明日自駕</div>
+            </div>
+            <div class="recommend-grid">
+                <div class="info-card eat"><div class="card-title"><span>🍴</span>宵夜推薦</div>超商 Lawson 的低溫殺菌牛奶與 L 炸雞，是落地日本的第一口美味。</div>
+                <div class="info-card secret"><div class="card-title"><span>㊙️</span>專業提示</div>第一晚住機場所在的成田市，可避免拖行李進東京市區的疲勞。</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/22</span> Day 2｜茨城海岸秘境</h2>
+            <span class="stay-info">🏠 住宿區域：鬼怒川溫泉</span>
+        </div>
+        <div class="image-gallery">
+            <img src="https://images.unsplash.com/photo-1582260659223-1d02c896944b?auto=format&fit=crop&w=800&q=80" alt="大洗鳥居">
+            <div class="side-images">
+                <img src="https://images.unsplash.com/photo-1570648632310-7434193856b3?auto=format&fit=crop&w=400&q=80" alt="漁港">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=400&q=80" alt="神社">
+            </div>
+        </div>
+        <div class="content">
+            <div class="timeline">
+                <div class="event"><span class="time">09:00</span> 成田取車，開啟東日本自駕之旅</div>
+                <div class="event"><span class="time">11:00</span> <b>那珂湊漁港</b>：海味市場現剖生蠔饗宴</div>
+                <div class="event"><span class="time">14:00</span> <b>大洗磯前神社</b>：朝聖震撼人心的「神磯鳥居」</div>
+                <div class="event"><span class="time">17:30</span> 抵達鬼怒川，享受山間靜謐溫泉</div>
+            </div>
+            <div class="recommend-grid">
+                <div class="info-card eat"><div class="card-title"><span>🍴</span>在地美食</div>漁港旁的「迴轉壽司」鮮度極高，推薦點在地捕撈的鮟鱇魚與生蠔。</div>
+                <div class="info-card secret"><div class="card-title"><span>㊙️</span>隱藏景點</div>酒列磯前神社的樹廊參道，是自駕才能輕鬆抵達的綠色秘境。</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/23</span> Day 3｜日光世界遺產</h2>
+            <span class="stay-info">🏠 住宿區域：鬼怒川溫泉</span>
+        </div>
+        <div class="image-gallery">
+            <img src="https://images.unsplash.com/photo-1542931415-3253724c0384?auto=format&fit=crop&w=800&q=80" alt="東照宮">
+            <div class="side-images">
+                <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&w=400&q=80" alt="瀑布">
+                <img src="https://images.unsplash.com/photo-1505816014357-96b5ff457e9a?auto=format&fit=crop&w=400&q=80" alt="中禪寺湖">
+            </div>
+        </div>
+        <div class="content">
+            <div class="timeline">
+                <div class="event"><span class="time">09:00</span> <b>日光東照宮</b>：領略德川幕府極致的建築美學</div>
+                <div class="event"><span class="time">12:30</span> <b>伊呂波山道</b>：體驗著名的髮夾彎景觀公路</div>
+                <div class="event"><span class="time">14:30</span> <b>華嚴瀑布</b>：搭乘電梯直擊日本三大名瀑的震撼</div>
+                <div class="event"><span class="time">16:00</span> <b>中禪寺湖</b>：湖畔散步，呼吸高原芬多精</div>
+            </div>
+            <div class="recommend-grid">
+                <div class="info-card eat"><div class="card-title"><span>🍴</span>在地美食</div>日光限定「湯波 (腐皮) 饅頭」，甜鹹口感在寒冷山區特別療癒。</div>
+                <div class="info-card secret"><div class="card-title"><span>㊙️</span>私房提示</div>東照宮內一定要找「眠貓」和「三猿」，這些木雕背後充滿哲思。</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/24</span> Day 4｜群馬名湯巡禮</h2>
+            <span class="stay-info">🏠 住宿區域：草津溫泉</span>
+        </div>
+        <div class="image-gallery">
+            <img src="https://images.unsplash.com/photo-1590230441939-60747c3d001c?auto=format&fit=crop&w=800&q=80" alt="草津湯畑">
+            <div class="side-images">
+                <img src="https://images.unsplash.com/photo-1528164344705-47542687990d?auto=format&fit=crop&w=400&q=80" alt="奧四萬湖">
+                <img src="https://images.unsplash.com/photo-1576431713203-0599a9a0890d?auto=format&fit=crop&w=400&q=80" alt="積善館">
+            </div>
+        </div>
+        <div class="content">
+            <div class="timeline">
+                <div class="event"><span class="time">10:00</span> <b>奧四萬湖</b>：尋訪夢幻的「四萬藍」湖泊</div>
+                <div class="event"><span class="time">12:30</span> <b>積善館</b>：站在紅橋前，進入《神隱少女》的奇幻世界</div>
+                <div class="event"><span class="time">15:30</span> 抵達日本第一名湯 <b>草津溫泉</b></div>
+                <div class="event"><span class="time">19:00</span> <b>湯畑夜遊</b>：欣賞充滿硫磺煙霧的華麗燈光秀</div>
+            </div>
+            <div class="recommend-grid">
+                <div class="info-card eat"><div class="card-title"><span>🍴</span>在地美食</div>草津老街的「溫泉饅頭」每家口味微異，推薦試吃現蒸出來的熱騰騰滋味。</div>
+                <div class="info-card secret"><div class="card-title"><span>㊙️</span>私房體驗</div>草津溫泉的酸度極高，泡完後建議一定要用清水稍微沖洗，保護肌膚。</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/25</span> Day 5｜國道最高點與善光寺</h2>
+            <span class="stay-info">🏠 住宿區域：長野市區</span>
         </div>
         <div class="image-gallery">
             <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=800&q=80" alt="善光寺">
             <div class="side-images">
-                <img src="https://images.unsplash.com/photo-1476156088841-b3f719d46307?auto=format&fit=crop&w=400&q=80" alt="景觀道路">
+                <img src="https://images.unsplash.com/photo-1476156088841-b3f719d46307?auto=format&fit=crop&w=400&q=80" alt="志賀高原道路">
                 <img src="https://images.unsplash.com/photo-1571506165871-ee72a35bc9d4?auto=format&fit=crop&w=400&q=80" alt="蕎麥麵">
             </div>
         </div>
         <div class="content">
             <div class="timeline">
-                <div class="event"><span class="time">09:00</span> 橫越 <b>志賀草津高原道路</b>，這是全日最高景觀國道</div>
-                <div class="event"><span class="time">11:00</span> 抵達 <b>國道最高點碑 (2172m)</b> 拍攝壯麗雲海</div>
-                <div class="event"><span class="time">14:30</span> <b>善光寺</b> 參拜，體驗著名的「地下戒壇巡禮」</div>
-                <div class="event"><span class="time">17:00</span> 漫步善光寺表參道，感受長野市的慢活節奏</div>
+                <div class="event"><span class="time">09:30</span> 駕駛 <b>志賀草津道路</b>，登上 2172m 的國道最高點</div>
+                <div class="event"><span class="time">14:00</span> <b>善光寺</b>：一生必去一次的千年古剎參拜</div>
+                <div class="event"><span class="time">16:30</span> 漫步長野表參道，尋找信州特色雜貨</div>
             </div>
             <div class="recommend-grid">
-                <div class="info-card eat"><span class="card-title">🍴 在地美食</span>「信州蕎麥麵」是長野的驕傲，推薦嘗試「胡桃醬汁」口味，香濃滑順。</div>
-                <div class="info-card secret"><span class="card-title">㊙️ 秘境提示</span>善光寺地下的「天堂之鑰」極其漆黑，觸摸到它據說能通往極樂世界，是難忘的感官體驗。</div>
+                <div class="info-card eat"><div class="card-title"><span>🍴</span>在地美食</div>長野名物「信州蕎麥麵」與「烤餡餅 (Oyaki)」，健康又富有在地風味。</div>
+                <div class="info-card secret"><div class="card-title"><span>㊙️</span>私房體驗</div>善光寺地下的「戒壇巡禮」，在一片漆黑中尋找天堂之鑰，極具啟發。</div>
             </div>
         </div>
     </div>
 
     <div class="day-box">
         <div class="day-header">
-            <h2>Day 6｜長野．神話森林與鏡之池</h2>
-            <span class="stay-info">🏠 住宿：輕井澤地區 (Karuizawa)</span>
+            <h2><span class="date-tag">8/26</span> Day 6｜神話森林與鏡之池</h2>
+            <span class="stay-info">🏠 住宿區域：輕井澤</span>
         </div>
         <div class="image-gallery">
             <img src="https://images.unsplash.com/photo-1578469640199-1c3583bb99c9?auto=format&fit=crop&w=800&q=80" alt="戶隱參道">
             <div class="side-images">
                 <img src="https://images.unsplash.com/photo-1589408643190-348637651086?auto=format&fit=crop&w=400&q=80" alt="鏡池">
-                <img src="https://images.unsplash.com/photo-1520260114866-519228e7d299?auto=format&fit=crop&w=400&q=80" alt="輕井澤森林">
+                <img src="https://images.unsplash.com/photo-1520260114866-519228e7d299?auto=format&fit=crop&w=400&q=80" alt="輕井澤">
             </div>
         </div>
         <div class="content">
             <div class="timeline">
-                <div class="event"><span class="time">09:30</span> <b>戶隱神社奧社</b>：步行在 500 年樹齡的巨杉林參道中</div>
-                <div class="event"><span class="time">12:00</span> <b>戶隱鏡池</b>：欣賞水面如鏡映照出的戶隱連峰</div>
-                <div class="event"><span class="time">15:30</span> 驅車前往 <b>輕井澤</b>，入住宿林間別墅感旅館</div>
-                <div class="event"><span class="time">18:00</span> 享受輕井澤著名的義式或法式高原料理</div>
+                <div class="event"><span class="time">09:00</span> <b>戶隱神社奧社</b>：步行在壯麗的五百歲巨杉林道</div>
+                <div class="event"><span class="time">12:00</span> <b>戶隱鏡池</b>：欣賞水面映照的山岳倒影美景</div>
+                <div class="event"><span class="time">15:30</span> 前往度假勝地 <b>輕井澤</b>，入住宿林間區塊</div>
             </div>
             <div class="recommend-grid">
-                <div class="info-card eat"><span class="card-title">🍴 在地美食</span>戶隱地區是蕎麥麵發源地之一，必吃「戶隱蕎麥麵」，口感紮實富有嚼勁。</div>
-                <div class="info-card secret"><span class="card-title">㊙️ 私房提示</span>去鏡池的最佳時間是清晨無風時，倒影最完美。午後則建議去榆樹街小鎮喝杯丸山咖啡。</div>
+                <div class="info-card eat"><div class="card-title"><span>🍴</span>在地美食</div>戶隱必吃「五束蕎麥麵」，這是在地供奉神明的神聖美味。</div>
+                <div class="info-card secret"><div class="card-title"><span>㊙️</span>秘境提示</div>戶隱奧社來回步行約 40-60 分鐘，建議穿著舒適的步行鞋前往。</div>
             </div>
         </div>
     </div>
 
     <div class="day-box">
         <div class="day-header">
-            <h2>Day 7｜輕井澤．森林漫慢生活</h2>
-            <span class="stay-info">🏠 住宿：輕井澤地區 (Karuizawa)</span>
+            <h2><span class="date-tag">8/27</span> Day 7｜輕井澤悠閒慢活</h2>
+            <span class="stay-info">🏠 住宿區域：輕井澤</span>
         </div>
         <div class="image-gallery">
             <img src="https://images.unsplash.com/photo-1623150502742-6a849aa94be4?auto=format&fit=crop&w=800&q=80" alt="石之教會">
             <div class="side-images">
-                <img src="https://images.unsplash.com/photo-1605649441119-9154f85e4922?auto=format&fit=crop&w=400&q=80" alt="小鎮">
-                <img src="https://images.unsplash.com/photo-1528164344705-47542687990d?auto=format&fit=crop&w=400&q=80" alt="Shopping">
+                <img src="https://images.unsplash.com/photo-1605649441119-9154f85e4922?auto=format&fit=crop&w=400&q=80" alt="榆樹街">
+                <img src="https://images.unsplash.com/photo-1528164344705-47542687990d?auto=format&fit=crop&w=400&q=80" alt="購物區">
             </div>
         </div>
         <div class="content">
             <div class="timeline">
-                <div class="event"><span class="time">09:30</span> 參觀 <b>石之教會</b> 與 <b>輕井澤高原教會</b> 的建築藝術</div>
-                <div class="event"><span class="time">11:30</span> <b>雲場池</b> 散策，環繞「天鵝湖」感受森林氣息</div>
-                <div class="event"><span class="time">13:00</span> <b>舊輕井澤銀座通</b>：逛雜貨、買果醬、吃在地小食</div>
-                <div class="event"><span class="time">15:00</span> <b>王子購物廣場 (Outlet)</b>：在如公園般的場地享受購物趣</div>
+                <div class="event"><span class="time">09:30</span> <b>石之教會</b> / 高原教會：森林中的建築詩篇</div>
+                <div class="event"><span class="time">11:30</span> <b>星野榆樹街小鎮</b>：在溪水聲中享受午餐</div>
+                <div class="event"><span class="time">14:00</span> <b>雲場池</b> 散步或 <b>王子 Outlet</b> 最後購物衝刺</div>
             </div>
             <div class="recommend-grid">
-                <div class="info-card eat"><span class="card-title">🍴 在地美食</span>輕井澤的「澤屋 (SAWAYA)」果醬，純天然無添加，是帶回台灣最好的伴手禮。</div>
-                <div class="info-card secret"><span class="card-title">㊙️ 旅遊提示</span>輕井澤非常適合騎腳踏車。如果體力允許，租一台單車在森林小徑穿梭是最高境界的享受。</div>
+                <div class="info-card eat"><div class="card-title"><span>🍴</span>在地美食</div>「丸山咖啡」的輕井澤限定拼配豆，是咖啡迷不能錯過的經典。</div>
+                <div class="info-card secret"><div class="card-title"><span>㊙️</span>私房玩法</div>輕井澤非常適合租借單車，沿著林間小徑穿梭是最浪漫的移動方式。</div>
             </div>
         </div>
     </div>
 
     <div class="day-box">
         <div class="day-header">
-            <h2>Day 8｜川越．小江戶時光倒流</h2>
-            <span class="stay-info">🏠 住宿：成田機場或成田市區 (Narita)</span>
+            <h2><span class="date-tag">8/28</span> Day 8｜小江戶時光倒流</h2>
+            <span class="stay-info">🏠 住宿區域：成田機場周邊</span>
         </div>
         <div class="image-gallery">
             <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=800&q=80" alt="川越老街">
             <div class="side-images">
                 <img src="https://images.unsplash.com/photo-1510079551460-2445885f8c6b?auto=format&fit=crop&w=400&q=80" alt="冰川神社">
-                <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&w=400&q=80" alt="地標">
+                <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=400&q=80" alt="老街">
             </div>
         </div>
         <div class="content">
             <div class="timeline">
-                <div class="event"><span class="time">09:00</span> 從輕井澤離開，一路南下前往埼玉縣 <b>川越市</b></div>
-                <div class="event"><span class="time">11:30</span> <b>川越藏造老街</b>：與江戶時代風格的鐘樓 (時之鐘) 合照</div>
-                <div class="event"><span class="time">14:00</span> <b>冰川神社</b>：釣紅鯛魚籤、走過繪馬隧道祈求姻緣</div>
-                <div class="event"><span class="time">16:30</span> 返回成田機場周邊，歸還租賃車輛，入住最後一晚飯店</div>
+                <div class="event"><span class="time">10:00</span> 從輕井澤離開，前往埼玉縣的小江戶 <b>川越</b></div>
+                <div class="event"><span class="time">12:30</span> <b>藏造老街</b>：漫步在黑瓦建築間，尋找時之鐘</div>
+                <div class="event"><span class="time">14:30</span> <b>冰川神社</b>：體驗「釣鯛魚」籤詩與祈緣</div>
+                <div class="event"><span class="time">17:00</span> 回到成田並還車，入住機場周邊飯店</div>
             </div>
             <div class="recommend-grid">
-                <div class="info-card eat"><span class="card-title">🍴 在地美食</span>川越盛產地瓜，必吃「地瓜霜淇淋」或超長的「烤地瓜條」點心。</div>
-                <div class="info-card secret"><span class="card-title">㊙️ 隱藏玩法</span>老街旁的「菓子屋橫丁」保留了傳統糖果屋，可以買到復古的日本零嘴。</div>
+                <div class="info-card eat"><div class="card-title"><span>🍴</span>在地美食</div>川越名產「地瓜菓子」，不管是地瓜片或地瓜霜淇淋都非常受歡迎。</div>
+                <div class="info-card secret"><div class="card-title"><span>㊙️</span>專業提示</div>最後一晚回成田還車後，不用擔心隔天趕飛機，能優雅地做行李最後整理。</div>
             </div>
         </div>
     </div>
 
-    <div style="text-align:center; padding: 20px; color: #888;">Day 9: 成田山新勝寺參拜 ➔ 鰻魚飯午餐 ➔ 賦歸</div>
+    <div class="day-box">
+        <div class="day-header">
+            <h2><span class="date-tag">8/29</span> Day 9｜千年古剎與歸途</h2>
+            <span class="stay-info">🏠 住宿區域：溫暖的家</span>
+        </div>
+        <div class="image-gallery">
+            <img src="https://images.unsplash.com/photo-1627471191062-8116b49206d4?auto=format&fit=crop&w=800&q=80" alt="新勝寺">
+            <div class="side-images">
+                <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=400&q=80" alt="鰻魚飯">
+                <img src="https://images.unsplash.com/photo-1605649441119-9154f85e4922?auto=format&fit=crop&w=400&q=80" alt="離境">
+            </div>
+        </div>
+        <div class="content">
+            <div class="timeline">
+                <div class="event"><span class="time">09:30</span> <b>成田山新勝寺</b>：在千年古剎進行最後的參拜與祈福</div>
+                <div class="event"><span class="time">11:30</span> <b>新勝寺表參道</b>：享用現烤焦香的「川豐鰻魚飯」</div>
+                <div class="event"><span class="time">14:00</span> 前往機場辦理登機，並在免稅店做最後補貨</div>
+                <div class="event"><span class="time">17:00</span> 帶著滿滿的回憶，搭機返台</div>
+            </div>
+            <div class="recommend-grid">
+                <div class="info-card eat"><div class="card-title"><span>🍴</span>在地美食</div>「川豐」的鰻魚飯一定要吃！職人現場剖魚、炭火直烤的香氣是旅程最完美的句點。</div>
+                <div class="info-card secret"><div class="card-title"><span>㊙️</span>最後衝刺</div>成田機場免稅店有許多地區限定的零食，記得在入關後一次買齊。</div>
+            </div>
+        </div>
+    </div>
 
 </div>
 
