@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>關東秘境自駕之旅｜8/21-8/29 (0311終極版)</title>
     <style>
-        :root { --primary: #1f3d3a; --secondary: #d4a373; --accent: #e63946; --bg: #f4f7f6; }
+        :root { --primary: #1f3d3a; --secondary: #d4a373; --bg: #f4f7f6; }
         body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; background: var(--bg); color: #333; margin: 0; padding: 0; line-height: 1.7; }
-        header { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://media-cdn.tripadvisor.com/media/photo-m/1280/15/33/fd/51/kanto.jpg'); background-size: cover; background-position: center; color: white; text-align: center; padding: 80px 20px; }
-        header h1 { font-size: 2.5em; margin: 0; letter-spacing: 5px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        header { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://media-cdn.tripadvisor.com/media/photo-m/1280/15/33/fd/51/kanto.jpg'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 20px; }
+        header h1 { font-size: 2.8em; margin: 0; letter-spacing: 5px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
         .drive-btn { display: inline-flex; align-items: center; background: #34A853; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
         .container { max-width: 900px; margin: -50px auto 40px; padding: 0 15px; }
         .day-box { background: white; border-radius: 15px; overflow: hidden; margin-bottom: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #eee; }
         .day-header { background: var(--primary); color: white; padding: 22px 25px; display: flex; justify-content: space-between; align-items: center; }
-        .day-header h2 { margin: 0; font-size: 1.4em; }
-        .date-tag { background: rgba(255,255,255,0.2); padding: 2px 10px; border-radius: 5px; margin-right: 12px; font-family: monospace; }
-        .stay-info { background: var(--secondary); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8em; font-weight: bold; }
+        .day-header h2 { margin: 0; font-size: 1.5em; display: flex; align-items: center; }
+        .date-tag { background: rgba(255,255,255,0.2); padding: 2px 10px; border-radius: 5px; margin-right: 12px; font-family: monospace; font-size: 0.9em; }
+        .stay-info { background: var(--secondary); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
         .image-gallery { display: grid; grid-template-columns: 2.2fr 1fr; gap: 12px; padding: 18px; }
         .image-gallery img { width: 100%; height: 280px; object-fit: cover; border-radius: 10px; }
         .side-images { display: flex; flex-direction: column; gap: 12px; }
@@ -25,11 +25,15 @@
         .timeline { border-left: 3px solid var(--secondary); padding-left: 25px; margin: 20px 0 25px 10px; }
         .event { margin-bottom: 12px; position: relative; }
         .event::before { content: ''; position: absolute; left: -34px; top: 8px; width: 14px; height: 14px; background: white; border: 3px solid var(--secondary); border-radius: 50%; }
-        .time { font-weight: bold; color: var(--primary); margin-right: 10px; font-family: monospace; }
-        .info-card { padding: 15px; border-radius: 10px; font-size: 0.9em; background: #f6ffed; border: 1px solid #b7eb8f; }
-        .map-section { background: #eef2f7; padding: 15px; border-radius: 10px; text-align: center; margin-top: 15px; }
-        .map-btn { display: inline-block; background: #4285F4; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
-        @media (max-width: 600px) { .image-gallery { grid-template-columns: 1fr; } .side-images { display: none; } .day-header { flex-direction: column; align-items: flex-start; gap: 8px; } }
+        .time { font-weight: bold; color: var(--primary); margin-right: 12px; font-family: monospace; font-size: 1.1em; }
+        .recommend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px; }
+        .info-card { padding: 18px; border-radius: 12px; font-size: 0.95em; border: 1px solid #eee; }
+        .eat { background: #fff1f0; border: 1px solid #ffa39e; }
+        .secret { background: #f6ffed; border: 1px solid #b7eb8f; }
+        .card-title { font-weight: bold; margin-bottom: 8px; color: #444; display: flex; align-items: center; }
+        .map-section { background: #eef2f7; padding: 15px; border-radius: 10px; text-align: center; margin-top: 10px; }
+        .map-btn { display: inline-flex; align-items: center; background: #4285F4; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+        @media (max-width: 600px) { .image-gallery { grid-template-columns: 1fr; } .side-images { display: none; } .recommend-grid { grid-template-columns: 1fr; } .day-header { flex-direction: column; align-items: flex-start; gap: 10px; } }
     </style>
 </head>
 <body>
@@ -39,83 +43,83 @@
 </header>
 <div class="container">
             <div class="day-box">
-                <div class="day-header"><h2><span class="date-tag">8/21</span> Day 1</h2><span class="stay-info">🏠 成田機場周邊飯店</span></div>
+                <div class="day-header"><h2><span class="date-tag">8/21</span> Day 1｜抵達成田</h2><span class="stay-info">🏠 成田機場周邊飯店</span></div>
                 <div class="image-gallery"><img src="https://tc.tabirai.net/sightseeing/article/img/0000427/kiji1Img.jpg"><div class="side-images"><img src="https://cdn.flyscoot.com/prod/images/default-source/flying-with-us/787-2.jpg?sfvrsn=c9ff56a6_13"><img src="https://hips.hearstapps.com/hmg-prod/images/vergerg-64e2f037ddc3f.jpg?crop=0.492xw:0.984xh;0,0&resize=640:*"></div></div>
                 <div class="content">
-                    <div class="timeline"><div class="event"><span class="time">20:00</span> 班機抵達成田機場</div><div class="event"><span class="time">21:30</span> 飯店接駁車接機</div></div>
-                    <div class="recommend-grid"><div class="info-card secret">💡 第一晚建議在機場備好糧食。</div></div>
+                    <div class="timeline"><div class="event"><span class="time">20:00</span> 班機抵達成田國際機場，辦理入境手續</div><div class="event"><span class="time">21:30</span> 搭乘飯店接駁巴士前往飯店休息</div></div>
+                    <div class="recommend-grid"><div class="info-card secret"><div class="card-title">㊙️ 行程 Tips</div>💡 第一晚建議在機場超商備好明早的簡易糧食。</div></div>
                     
                 </div>
             </div>
             <div class="day-box">
-                <div class="day-header"><h2><span class="date-tag">8/22</span> Day 2</h2><span class="stay-info">🏠 鬼怒川溫泉地區飯店</span></div>
-                <div class="image-gallery"><img src="https://d1grca2t3zpuug.cloudfront.net/2025/10/isosagijinja_01-860x573-1759630803.webp"><div class="side-images"><img src="https://resources.matcha-jp.com/resize/480x2000/2022/01/05-119611.webp"><img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1080,h_812/w_66,x_12,y_12,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/wpbq7k1jfi8ysedwqyqc/%E5%A4%A7%E6%B4%97%E7%A3%AF%E5%89%8D%E7%A5%9E%E7%A4%BE%EF%BC%86%E9%82%A3%E7%8F%82%E6%B9%8A%E6%B5%B7%E9%AE%AE%E5%B8%82%E5%A0%B4%EF%BC%86%E5%9C%8B%E7%87%9F%E5%B8%B8%E9%99%B8%E6%B5%B7%E6%BF%B1%E5%85%AC%E5%9C%92%E8%8A%B1%E6%B5%B7%E4%B8%80%E6%97%A5%E9%81%8A%E4%B8%A8%E6%9D%B1%E4%BA%AC%E5%87%BA%E7%99%BC.jpg"></div></div>
+                <div class="day-header"><h2><span class="date-tag">8/22</span> Day 2｜茨城海岸秘境</h2><span class="stay-info">🏠 鬼怒川溫泉地區飯店</span></div>
+                <div class="image-gallery"><img src="https://d1grca2t3zpuug.cloudfront.net/2025/10/isosagijinja_01-860x573-1759630803.webp"><div class="side-images"><img src="https://resources.matcha-jp.com/resize/480x2000/2022/01/05-119611.webp"><img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1080,h_812/activities/wpbq7k1jfi8ysedwqyqc/.jpg"></div></div>
                 <div class="content">
-                    <div class="timeline"><div class="event"><span class="time">09:00</span> 成田取車出發</div><div class="event"><span class="time">11:00</span> 那珂湊漁港現剖生蠔</div><div class="event"><span class="time">14:00</span> 大洗磯前神社神磯鳥居</div></div>
-                    <div class="recommend-grid"><div class="info-card secret">🍴 必吃：漁港生蠔、迴轉壽司。</div></div>
-                    <div class="map-section"><a href="https://maps.app.goo.gl/mX2SaGCpu5x65rJ58" target="_blank" class="map-btn">📍 查看今日 Google Maps 導航</a></div>
+                    <div class="timeline"><div class="event"><span class="time">09:00</span> 成田地區出發取車</div><div class="event"><span class="time">11:00</span> 那珂湊漁港午餐：現剖大生蠔、鮮魚壽司</div><div class="event"><span class="time">14:00</span> 大洗磯前神社：神磯鳥居拍照</div><div class="event"><span class="time">17:30</span> 抵達鬼怒川溫泉入住</div></div>
+                    <div class="recommend-grid"><div class="info-card eat"><div class="card-title">🍴 在地必吃</div>🍴 那珂湊漁港現剖生蠔、迴轉壽司。</div><div class="info-card secret"><div class="card-title">㊙️ 行程 Tips</div>㊙️ 大洗鳥居下午光線最莊嚴。</div></div>
+                    <div class="map-section"><a href="https://maps.app.goo.gl/mX2SaGCpu5x65rJ58" target="_blank" class="map-btn">📍 查看今日 Google Maps 導覽</a></div>
                 </div>
             </div>
             <div class="day-box">
-                <div class="day-header"><h2><span class="date-tag">8/23</span> Day 3</h2><span class="stay-info">🏠 沼田/老神溫泉地區飯店</span></div>
+                <div class="day-header"><h2><span class="date-tag">8/23</span> Day 3｜日光遺產 ➔ 浪漫街道</h2><span class="stay-info">🏠 沼田/老神溫泉地區飯店</span></div>
                 <div class="image-gallery"><img src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000497/img/basic/a0000497_main.jpg?20190910105340&q=80"><div class="side-images"><img src="https://static.gltjp.com/glt/data/directory/11000/10049/20220102_223902_f6b53b38_w1920.webp"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/%E5%86%AC%E3%81%AE%E4%B8%AD%E7%A6%85%E5%AF%BA%E6%B9%9620240203-IMG_9253.jpg"></div></div>
                 <div class="content">
-                    <div class="timeline"><div class="event"><span class="time">09:30</span> 日光東照宮參拜</div><div class="event"><span class="time">13:30</span> 華嚴瀑布 & 中禪寺湖</div><div class="event"><span class="time">15:30</span> 穿越浪漫街道(國道120)</div></div>
-                    <div class="recommend-grid"><div class="info-card secret">㊙️ 住宿改在沼田方便明日採果。</div></div>
-                    <div class="map-section"><a href="https://maps.app.goo.gl/hfdHuY4bgQAaBq1t9" target="_blank" class="map-btn">📍 查看今日 Google Maps 導航</a></div>
+                    <div class="timeline"><div class="event"><span class="time">09:30</span> 日光東照宮：德川幕府極致美學</div><div class="event"><span class="time">13:30</span> 中禪寺湖 & 華嚴瀑布</div><div class="event"><span class="time">15:30</span> 駕駛浪漫街道(國道120)穿越金精峠</div><div class="event"><span class="time">17:30</span> 抵達老神溫泉地區入住</div></div>
+                    <div class="recommend-grid"><div class="info-card eat"><div class="card-title">🍴 在地必吃</div>🍴 日光湯波 (腐皮) 料理。</div><div class="info-card secret"><div class="card-title">㊙️ 行程 Tips</div>㊙️ 住宿改在沼田可大幅縮短 Day 4 採果動線。</div></div>
+                    <div class="map-section"><a href="https://maps.app.goo.gl/hfdHuY4bgQAaBq1t9" target="_blank" class="map-btn">📍 查看今日 Google Maps 導覽</a></div>
                 </div>
             </div>
             <div class="day-box">
-                <div class="day-header"><h2><span class="date-tag">8/24</span> Day 4</h2><span class="stay-info">🏠 草津溫泉地區飯店</span></div>
+                <div class="day-header"><h2><span class="date-tag">8/24</span> Day 4｜沼田採果 ➔ 榛名山聖地</h2><span class="stay-info">🏠 草津溫泉地區飯店</span></div>
                 <div class="image-gallery"><img src="https://images.abic.com.tw/images/backend/posts/db3bf740fb7494dc7ffda3785477a233.jpg"><div class="side-images"><img src="https://www.jrtimes.tw/upload/list/7300d829-3968-416a-98cf-ea869c73636d.jpg"><img src="https://www.japaholic.com/storage/article/images/2021/04/sekizenkan-fb.jpg"></div></div>
                 <div class="content">
-                    <div class="timeline"><div class="event"><span class="time">09:00</span> 原田農園採果</div><div class="event"><span class="time">11:30</span> 四萬溫泉/積善館</div><div class="event"><span class="time">14:30</span> 榛名山 & 榛名神社</div></div>
-                    <div class="recommend-grid"><div class="info-card secret">㊙️ 榛名神社氣場強大建議留1.5hr。</div></div>
-                    <div class="map-section"><a href="https://maps.app.goo.gl/eWKVxTGVQVeqvBdm9" target="_blank" class="map-btn">📍 查看今日 Google Maps 導航</a></div>
+                    <div class="timeline"><div class="event"><span class="time">09:00</span> 原田農園採果：現摘葡萄/水蜜桃</div><div class="event"><span class="time">11:30</span> 四萬溫泉：奧四萬湖與積善館拍照</div><div class="event"><span class="time">14:30</span> 榛名山 & 榛名神社：頭文字D聖地</div><div class="event"><span class="time">17:30</span> 抵達草津溫泉湯畑入住</div></div>
+                    <div class="recommend-grid"><div class="info-card eat"><div class="card-title">🍴 在地必吃</div>🍴 沼田味噌烤饅頭。</div><div class="info-card secret"><div class="card-title">㊙️ 行程 Tips</div>㊙️ 榛名神社能量強大，步道需預留 1.5 小時。</div></div>
+                    <div class="map-section"><a href="https://maps.app.goo.gl/eWKVxTGVQVeqvBdm9" target="_blank" class="map-btn">📍 查看今日 Google Maps 導覽</a></div>
                 </div>
             </div>
             <div class="day-box">
-                <div class="day-header"><h2><span class="date-tag">8/25</span> Day 5</h2><span class="stay-info">🏠 長野市區飯店</span></div>
+                <div class="day-header"><h2><span class="date-tag">8/25</span> Day 5｜景觀國道 ➔ 北齋藝術</h2><span class="stay-info">🏠 長野市區飯店</span></div>
                 <div class="image-gallery"><img src="https://www.jrtimes.tw/upload/list/7300d829-3968-416a-98cf-ea869c73636d.jpg"><div class="side-images"><img src="https://oreo.blog/wp-content/uploads/20171225134839_84.jpg"><img src="https://resources.matcha-jp.com/resize/480x2000/2023/12/13-156631.webp"></div></div>
                 <div class="content">
-                    <div class="timeline"><div class="event"><span class="time">09:00</span> 志賀草津道路自駕</div><div class="event"><span class="time">10:30</span> 國道最高點(2172m)</div><div class="event"><span class="time">12:30</span> 雷瀧(雷滝)秘境</div><div class="event"><span class="time">14:30</span> 小布施栗子飯</div><div class="event"><span class="time">17:00</span> 善光寺參拜</div></div>
-                    <div class="recommend-grid"><div class="info-card secret">🍴 必吃：小布施栗子飯。</div></div>
-                    <div class="map-section"><a href="https://maps.app.goo.gl/U39RqkBrhJvQcB4g7" target="_blank" class="map-btn">📍 查看今日 Google Maps 導航</a></div>
+                    <div class="timeline"><div class="event"><span class="time">09:00</span> 駕駛志賀草津道路 (景觀國道)</div><div class="event"><span class="time">10:30</span> 日本國道最高點 (海拔 2172m)</div><div class="event"><span class="time">12:30</span> 雷瀧 (雷滝)：秘境瀑布後方巡禮</div><div class="event"><span class="time">14:30</span> 小布施：栗子名店午餐與北齋博物館</div><div class="event"><span class="time">17:00</span> 善光寺參拜</div></div>
+                    <div class="recommend-grid"><div class="info-card eat"><div class="card-title">🍴 在地必吃</div>🍴 小布施栗子飯、長野烤餡餅。</div><div class="info-card secret"><div class="card-title">㊙️ 行程 Tips</div>㊙️ 雷瀧是可以走到瀑布正後方的獨特體驗。</div></div>
+                    <div class="map-section"><a href="https://maps.app.goo.gl/U39RqkBrhJvQcB4g7" target="_blank" class="map-btn">📍 查看今日 Google Maps 導覽</a></div>
                 </div>
             </div>
             <div class="day-box">
-                <div class="day-header"><h2><span class="date-tag">8/26</span> Day 6</h2><span class="stay-info">🏠 輕井澤地區飯店</span></div>
+                <div class="day-header"><h2><span class="date-tag">8/26</span> Day 6｜神話森林 ➔ 輕井澤</h2><span class="stay-info">🏠 輕井澤地區飯店</span></div>
                 <div class="image-gallery"><img src="https://visit-nagano.alpico.co.jp/hubfs/images/travelog/articles/togakushi%20(3)-1.jpg"><div class="side-images"><img src="https://kavana.tw/wp-content/uploads/thumb_20200828122222_74.jpg"><img src="https://resources.matcha-jp.com/resize/480x2000/2023/12/13-156631.webp"></div></div>
                 <div class="content">
-                    <div class="timeline"><div class="event"><span class="time">09:30</span> 戶隱神社奧社巨杉參道</div><div class="event"><span class="time">12:30</span> 戶隱鏡池倒影</div><div class="event"><span class="time">16:30</span> 抵達輕井澤</div></div>
-                    <div class="recommend-grid"><div class="info-card secret">㊙️ 戶隱參道來回約需1小時。</div></div>
-                    <div class="map-section"><a href="https://maps.app.goo.gl/Lhn9Wm3Z6p9iCZ7u9" target="_blank" class="map-btn">📍 查看今日 Google Maps 導航</a></div>
+                    <div class="timeline"><div class="event"><span class="time">09:30</span> 戶隱神社奧社：五百年巨杉參道</div><div class="event"><span class="time">12:30</span> 戶隱鏡池：欣賞山岳倒影絕景</div><div class="event"><span class="time">16:30</span> 抵達度假聖地輕井澤</div></div>
+                    <div class="recommend-grid"><div class="info-card eat"><div class="card-title">🍴 在地必吃</div>🍴 戶隱蕎麥麵。</div><div class="info-card secret"><div class="card-title">㊙️ 行程 Tips</div>㊙️ 戶隱參道步行時間較長，建議穿好走的鞋。</div></div>
+                    <div class="map-section"><a href="https://maps.app.goo.gl/Lhn9Wm3Z6p9iCZ7u9" target="_blank" class="map-btn">📍 查看今日 Google Maps 導覽</a></div>
                 </div>
             </div>
             <div class="day-box">
-                <div class="day-header"><h2><span class="date-tag">8/27</span> Day 7</h2><span class="stay-info">🏠 輕井澤飯店 (連住)</span></div>
+                <div class="day-header"><h2><span class="date-tag">8/27</span> Day 7｜輕井澤悠閒慢活</h2><span class="stay-info">🏠 輕井澤飯店 (連住)</span></div>
                 <div class="image-gallery"><img src="https://g.udn.com.tw/upfiles/B_KO/kocj/PSN_PHOTO/211/f_28434211_1.jpg"><div class="side-images"><img src="https://www.hokkaidolibrary.com/img/upload/Japan/KANTO/304-b.jpg"><img src="https://api.elle.com.hk/var/site/storage/images/_aliases/img_776_w/fashion/style_insight/3-tokyo-outlets-with-great-views/node_1712049/29216393-1-chi-HK/2-KARUIZAWA-PRINCE-SHOPPING-PLAZA-2.jpg"></div></div>
                 <div class="content">
-                    <div class="timeline"><div class="event"><span class="time">10:00</span> 石之教會/高原教會</div><div class="event"><span class="time">13:30</span> 星野榆樹街小鎮</div><div class="event"><span class="time">15:00</span> 王子Outlet/雲場池</div></div>
-                    <div class="recommend-grid"><div class="info-card secret">💡 暑假期間Outlet人潮多請注意。</div></div>
-                    <div class="map-section"><a href="https://maps.app.goo.gl/M1sQgczBYMrRgLYR9" target="_blank" class="map-btn">📍 查看今日 Google Maps 導航</a></div>
+                    <div class="timeline"><div class="event"><span class="time">10:00</span> 石之教會 / 高原教會巡禮</div><div class="event"><span class="time">13:30</span> 星野榆樹街小鎮午餐</div><div class="event"><span class="time">15:00</span> 王子 Outlet 購物或雲場池漫步</div></div>
+                    <div class="recommend-grid"><div class="info-card eat"><div class="card-title">🍴 在地必吃</div>🍴 輕井澤果醬、熟成火腿。</div><div class="info-card secret"><div class="card-title">㊙️ 行程 Tips</div>💡 暑假期間 Outlet 人潮眾多請注意時間。</div></div>
+                    <div class="map-section"><a href="https://maps.app.goo.gl/M1sQgczBYMrRgLYR9" target="_blank" class="map-btn">📍 查看今日 Google Maps 導覽</a></div>
                 </div>
             </div>
             <div class="day-box">
-                <div class="day-header"><h2><span class="date-tag">8/28</span> Day 8</h2><span class="stay-info">🏠 成田機場周邊飯店</span></div>
+                <div class="day-header"><h2><span class="date-tag">8/28</span> Day 8｜雙水鄉時光倒流</h2><span class="stay-info">🏠 成田機場周邊飯店</span></div>
                 <div class="image-gallery"><img src="https://d1grca2t3zpuug.cloudfront.net/2022/07/kkk5060904_m.jpg"><div class="side-images"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStXsOh2hweZlZBnUjoPlnal4Bvr_z2fibObQ&s"><img src="https://static.gltjp.com/glt/data/article/11000/10243/20161220_203622_57dcb03a_w1920.webp"></div></div>
                 <div class="content">
-                    <div class="timeline"><div class="event"><span class="time">11:30</span> 川越藏造老街</div><div class="event"><span class="time">16:00</span> 佐原水鄉/新勝寺(二選一)</div></div>
-                    <div class="recommend-grid"><div class="info-card secret">㊙️ 長程駕駛建議在SA休息。</div></div>
-                    <div class="map-section"><a href="https://maps.app.goo.gl/6Tde9DvKQZRNrT3r9" target="_blank" class="map-btn">📍 查看今日 Google Maps 導航</a></div>
+                    <div class="timeline"><div class="event"><span class="time">09:00</span> 退房離開輕井澤</div><div class="event"><span class="time">11:30</span> 川越小江戶老街、冰川神社</div><div class="event"><span class="time">16:00</span> 佐原水鄉：運河船遊 (或新勝寺二選一)</div><div class="event"><span class="time">18:30</span> 抵達成田地區飯店辦理入住</div></div>
+                    <div class="recommend-grid"><div class="info-card eat"><div class="card-title">🍴 在地必吃</div>🍴 川越地瓜甜點、佐原鰻魚飯。</div><div class="info-card secret"><div class="card-title">㊙️ 行程 Tips</div>㊙️ 長程駕駛建議在 SA 休息區稍微休息。</div></div>
+                    <div class="map-section"><a href="https://maps.app.goo.gl/6Tde9DvKQZRNrT3r9" target="_blank" class="map-btn">📍 查看今日 Google Maps 導覽</a></div>
                 </div>
             </div>
             <div class="day-box">
-                <div class="day-header"><h2><span class="date-tag">8/29</span> Day 9</h2><span class="stay-info">🏠 溫暖的家</span></div>
+                <div class="day-header"><h2><span class="date-tag">8/29</span> Day 9｜圓滿歸途回味</h2><span class="stay-info">🏠 溫暖的家</span></div>
                 <div class="image-gallery"><img src="https://static.gltjp.com/glt/data/article/21000/20425/20230918_153545_499b3653_w1920.webp"><div class="side-images"><img src="https://hips.hearstapps.com/hmg-prod/images/8-1-6864a6f34cfd6.jpg?resize=980:*"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz1GBTzG_NcSrO1N0SSBfLXEOhNhcMPFxfcQ&s"></div></div>
                 <div class="content">
-                    <div class="timeline"><div class="event"><span class="time">08:00</span> 飯店出發加滿油</div><div class="event"><span class="time">09:00</span> 成田機場租車點還車</div><div class="event"><span class="time">12:00</span> 班機離境回台</div></div>
-                    <div class="recommend-grid"><div class="info-card secret">㊙️ 還車前請保留加油收據。</div></div>
+                    <div class="timeline"><div class="event"><span class="time">08:00</span> 飯店出發並找加油站加滿油</div><div class="event"><span class="time">09:00</span> 成田機場租車點還車完成</div><div class="event"><span class="time">12:00</span> 班機起飛離境</div></div>
+                    <div class="recommend-grid"><div class="info-card secret"><div class="card-title">㊙️ 行程 Tips</div>㊙️ 還車前請務必保留最後一次加油收據。</div></div>
                     
                 </div>
             </div></div>
